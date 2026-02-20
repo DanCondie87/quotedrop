@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import QuoteCard from '@/components/QuoteCard';
 import { getRandomQuote } from '@/lib/quotes';
 import { getRandomGradient } from '@/lib/gradients';
@@ -48,8 +49,16 @@ export default function Home() {
     >
       <QuoteCard quote={quote} />
       
-      {/* Favorite button - top right of quote card area */}
-      <div className="fixed top-8 right-8">
+      {/* Top navigation */}
+      <div className="fixed top-8 left-0 right-0 px-8 flex justify-between items-center">
+        <Link
+          href="/favorites"
+          className="px-6 py-3 rounded-full bg-white/20 backdrop-blur-md text-white font-medium border border-white/30 hover:bg-white/30 active:bg-white/40 transition-all shadow-lg"
+        >
+          Favorites
+        </Link>
+        
+        {/* Favorite button */}
         <button
           onClick={handleToggleFavorite}
           className="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/30 active:bg-white/40 transition-all shadow-lg flex items-center justify-center"

@@ -74,14 +74,14 @@ QuoteDrop is a simple, beautiful web app that displays random inspirational quot
 **Description:** As a user, I want to see all my saved favorite quotes in one place.
 
 **Acceptance Criteria:**
-- [ ] Add a "Favorites" link/button in the top-right corner of the main view
-- [ ] Create `src/app/favorites/page.tsx` showing all saved quotes as cards
-- [ ] Each card shows quote text, author, and a remove button
-- [ ] Cards have subtle gradient backgrounds matching their original gradient
-- [ ] "Back" link returns to the main quote view
-- [ ] Empty state shows "No favorites saved yet" message
-- [ ] Typecheck passes
-- [ ] Verify changes work in browser
+- [x] Add a "Favorites" link/button in the top-right corner of the main view
+- [x] Create `src/app/favorites/page.tsx` showing all saved quotes as cards
+- [x] Each card shows quote text, author, and a remove button
+- [x] Cards have subtle gradient backgrounds matching their original gradient
+- [x] "Back" link returns to the main quote view
+- [x] Empty state shows "No favorites saved yet" message
+- [x] Typecheck passes
+- [x] Verify changes work in browser
 
 ## Non-Goals
 
