@@ -40,12 +40,12 @@ QuoteDrop is a simple, beautiful web app that displays random inspirational quot
 **Description:** As a user, I want to click a button to get a new random quote so I can browse through different quotes.
 
 **Acceptance Criteria:**
-- [ ] Add a "New Quote" button below the quote card
-- [ ] Clicking it shows a different random quote with a different gradient
-- [ ] Button has hover/active states and looks good on the gradient
-- [ ] Button uses a semi-transparent white style (glass-morphism feel)
-- [ ] Typecheck passes
-- [ ] Verify changes work in browser
+- [x] Add a "New Quote" button below the quote card
+- [x] Clicking it shows a different random quote with a different gradient
+- [x] Button has hover/active states and looks good on the gradient
+- [x] Button uses a semi-transparent white style (glass-morphism feel)
+- [x] Typecheck passes
+- [x] Verify changes work in browser
 
 ### US-004: Copy to Clipboard
 **Description:** As a user, I want to copy a quote to my clipboard so I can paste it elsewhere.
