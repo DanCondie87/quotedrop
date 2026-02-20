@@ -62,13 +62,13 @@ QuoteDrop is a simple, beautiful web app that displays random inspirational quot
 **Description:** As a user, I want to save quotes I like so I can revisit them later.
 
 **Acceptance Criteria:**
-- [ ] Add a heart/bookmark icon button on the quote card
-- [ ] Clicking it saves the current quote to favorites in localStorage
-- [ ] Icon fills/changes color when the current quote is already favorited
-- [ ] Clicking again removes from favorites (toggle)
-- [ ] Favorites persist across page reloads
-- [ ] Typecheck passes
-- [ ] Verify changes work in browser
+- [x] Add a heart/bookmark icon button on the quote card
+- [x] Clicking it saves the current quote to favorites in localStorage
+- [x] Icon fills/changes color when the current quote is already favorited
+- [x] Clicking again removes from favorites (toggle)
+- [x] Favorites persist across page reloads
+- [x] Typecheck passes
+- [x] Verify changes work in browser
 
 ### US-006: Favorites View
 **Description:** As a user, I want to see all my saved favorite quotes in one place.
