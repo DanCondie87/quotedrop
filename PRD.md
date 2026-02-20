@@ -19,11 +19,11 @@ QuoteDrop is a simple, beautiful web app that displays random inspirational quot
 **Description:** As a user, I want to see an inspirational quote with its author displayed beautifully so that I feel inspired.
 
 **Acceptance Criteria:**
-- [ ] Create `src/lib/quotes.ts` with at least 30 hardcoded quotes (text + author)
-- [ ] Create `src/components/QuoteCard.tsx` that displays quote text and author
-- [ ] Replace default page.tsx with QuoteCard showing a random quote on load
-- [ ] Quote text is large, centered, with author below
-- [ ] Typecheck passes
+- [x] Create `src/lib/quotes.ts` with at least 30 hardcoded quotes (text + author)
+- [x] Create `src/components/QuoteCard.tsx` that displays quote text and author
+- [x] Replace default page.tsx with QuoteCard showing a random quote on load
+- [x] Quote text is large, centered, with author below
+- [x] Typecheck passes
 
 ### US-002: Gradient Backgrounds
 **Description:** As a user, I want each quote to have a unique gradient background so the experience feels fresh each time.
