@@ -1,0 +1,92 @@
+# QuoteDrop — Product Requirements Document
+
+## Introduction
+
+QuoteDrop is a simple, beautiful web app that displays random inspirational quotes with gradient backgrounds. Users can cycle through quotes, copy them to clipboard, and save favorites to local storage. Built as a demo project to test the WOWWAI autonomous development pipeline.
+
+## Goals
+
+- Display random quotes with beautiful gradient backgrounds
+- Allow users to get a new random quote with one click
+- Copy quotes to clipboard for sharing
+- Save/unsave favorite quotes with local storage persistence
+- View saved favorites in a separate view
+- Clean, minimal, mobile-friendly UI
+
+## User Stories
+
+### US-001: Quote Data & Display
+**Description:** As a user, I want to see an inspirational quote with its author displayed beautifully so that I feel inspired.
+
+**Acceptance Criteria:**
+- [ ] Create `src/lib/quotes.ts` with at least 30 hardcoded quotes (text + author)
+- [ ] Create `src/components/QuoteCard.tsx` that displays quote text and author
+- [ ] Replace default page.tsx with QuoteCard showing a random quote on load
+- [ ] Quote text is large, centered, with author below
+- [ ] Typecheck passes
+
+### US-002: Gradient Backgrounds
+**Description:** As a user, I want each quote to have a unique gradient background so the experience feels fresh each time.
+
+**Acceptance Criteria:**
+- [ ] Create `src/lib/gradients.ts` with at least 10 gradient color pairs
+- [ ] Each new quote gets a randomly selected gradient background
+- [ ] Gradient covers the full viewport
+- [ ] Text is white with subtle text shadow for readability
+- [ ] Typecheck passes
+- [ ] Verify changes work in browser
+
+### US-003: New Quote Button
+**Description:** As a user, I want to click a button to get a new random quote so I can browse through different quotes.
+
+**Acceptance Criteria:**
+- [ ] Add a "New Quote" button below the quote card
+- [ ] Clicking it shows a different random quote with a different gradient
+- [ ] Button has hover/active states and looks good on the gradient
+- [ ] Button uses a semi-transparent white style (glass-morphism feel)
+- [ ] Typecheck passes
+- [ ] Verify changes work in browser
+
+### US-004: Copy to Clipboard
+**Description:** As a user, I want to copy a quote to my clipboard so I can paste it elsewhere.
+
+**Acceptance Criteria:**
+- [ ] Add a "Copy" button next to or near the New Quote button
+- [ ] Clicking it copies the quote text + author to clipboard (format: "Quote text" — Author)
+- [ ] Button shows brief "Copied!" feedback (text change for 2 seconds)
+- [ ] Uses navigator.clipboard API
+- [ ] Typecheck passes
+- [ ] Verify changes work in browser
+
+### US-005: Save Favorites
+**Description:** As a user, I want to save quotes I like so I can revisit them later.
+
+**Acceptance Criteria:**
+- [ ] Add a heart/bookmark icon button on the quote card
+- [ ] Clicking it saves the current quote to favorites in localStorage
+- [ ] Icon fills/changes color when the current quote is already favorited
+- [ ] Clicking again removes from favorites (toggle)
+- [ ] Favorites persist across page reloads
+- [ ] Typecheck passes
+- [ ] Verify changes work in browser
+
+### US-006: Favorites View
+**Description:** As a user, I want to see all my saved favorite quotes in one place.
+
+**Acceptance Criteria:**
+- [ ] Add a "Favorites" link/button in the top-right corner of the main view
+- [ ] Create `src/app/favorites/page.tsx` showing all saved quotes as cards
+- [ ] Each card shows quote text, author, and a remove button
+- [ ] Cards have subtle gradient backgrounds matching their original gradient
+- [ ] "Back" link returns to the main quote view
+- [ ] Empty state shows "No favorites saved yet" message
+- [ ] Typecheck passes
+- [ ] Verify changes work in browser
+
+## Non-Goals
+
+- No backend/database — everything is client-side with localStorage
+- No user accounts or authentication
+- No sharing to social media (copy to clipboard is sufficient)
+- No quote categories or filtering
+- No dark/light mode toggle (dark gradient backgrounds are the theme)
