@@ -29,12 +29,12 @@ QuoteDrop is a simple, beautiful web app that displays random inspirational quot
 **Description:** As a user, I want each quote to have a unique gradient background so the experience feels fresh each time.
 
 **Acceptance Criteria:**
-- [ ] Create `src/lib/gradients.ts` with at least 10 gradient color pairs
-- [ ] Each new quote gets a randomly selected gradient background
-- [ ] Gradient covers the full viewport
-- [ ] Text is white with subtle text shadow for readability
-- [ ] Typecheck passes
-- [ ] Verify changes work in browser
+- [x] Create `src/lib/gradients.ts` with at least 10 gradient color pairs
+- [x] Each new quote gets a randomly selected gradient background
+- [x] Gradient covers the full viewport
+- [x] Text is white with subtle text shadow for readability
+- [x] Typecheck passes
+- [x] Verify changes work in browser
 
 ### US-003: New Quote Button
 **Description:** As a user, I want to click a button to get a new random quote so I can browse through different quotes.
