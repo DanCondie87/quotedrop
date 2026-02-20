@@ -51,12 +51,12 @@ QuoteDrop is a simple, beautiful web app that displays random inspirational quot
 **Description:** As a user, I want to copy a quote to my clipboard so I can paste it elsewhere.
 
 **Acceptance Criteria:**
-- [ ] Add a "Copy" button next to or near the New Quote button
-- [ ] Clicking it copies the quote text + author to clipboard (format: "Quote text" — Author)
-- [ ] Button shows brief "Copied!" feedback (text change for 2 seconds)
-- [ ] Uses navigator.clipboard API
-- [ ] Typecheck passes
-- [ ] Verify changes work in browser
+- [x] Add a "Copy" button next to or near the New Quote button
+- [x] Clicking it copies the quote text + author to clipboard (format: "Quote text" — Author)
+- [x] Button shows brief "Copied!" feedback (text change for 2 seconds)
+- [x] Uses navigator.clipboard API
+- [x] Typecheck passes
+- [x] Verify changes work in browser
 
 ### US-005: Save Favorites
 **Description:** As a user, I want to save quotes I like so I can revisit them later.
